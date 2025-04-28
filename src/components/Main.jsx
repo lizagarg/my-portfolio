@@ -1,0 +1,21 @@
+export const Main=()=> {
+    return(
+        <div className="py-4 px-2 w-230  ">
+            <div className="py-4 font-bold text-3xl text-gray-800 ">About Me</div>
+            <div className="flex">
+            <div className="w-120">My days start with coffee and end with code. In between, there's a little chaos and a constant drive to make something better than yesterday.</div>
+            
+                <div className="flex text-xs items-center pl-2 border pr-2 border-amber-100 shadow-md mx-2">
+                <div><img className="h-11 w-11 rounded-4xl p-2" src="src\assets\275014389_5249073775112247_3700986186374416778_n.jpg" alt="" /></div>
+                <div className="pr-3">
+                    <div className="font-bold">Thapar Institute Of Engineering And Technology</div>
+                    <div className="font-light">B.E. Computer Engineering</div>
+                </div>
+                <div className="">2022-2026</div>
+                </div>
+                
+        
+            </div>
+        </div>
+    )
+}
