@@ -3,7 +3,7 @@ import { ProjectCard } from "../components/ProjectCard"
 import { Sidebar } from "../components/Sidebar"
 export const Project=()=>{
     return(
-        <div>
+        <div className="dark:bg-[#1a1a1a]">
         <Navbar></Navbar>
         <div className="flex">
         <Sidebar></Sidebar>

@@ -8,12 +8,12 @@ export function ContactForm() {
   }
   return (
     <div>
-        <div className='font-mono font-bold  pt-10 text-2xl'>Contact me</div>
+        <div className='font-mono font-bold  pt-10 text-2xl dark:text-white '>Contact me</div>
     <form onSubmit={handleSubmit}>
         <div>
         <label htmlFor="name" >
       </label>
-      <input className='border p-2 border-gray-300 rounded-sm mr-6 w-70 mt-5' 
+      <input className='border p-2 border-gray-300 rounded-sm mr-6 w-70 mt-5  dark:border-yellow-100 dark:text-white' 
         id="name"
         type="text" 
         name="name"
@@ -21,7 +21,7 @@ export function ContactForm() {
       />
       <label htmlFor="email" >
       </label>
-      <input className='border p-2 border-gray-300 rounded-sm w-70 mt-5'
+      <input className='border p-2 border-gray-300 rounded-sm w-70 mt-5  dark:border-yellow-100 dark:text-white'
         id="email"
         type="email" 
         name="email"
@@ -34,7 +34,7 @@ export function ContactForm() {
       />
         </div>
     
-      <textarea className='border border-gray-300 pt-1 px-2 mt-9 w-147 h-40'
+      <textarea className='border border-gray-300 pt-1 px-2 mt-9 w-147 h-40 dark:border-yellow-100 dark:text-white '
         id="message"
         name="message"
         placeholder='Message'
@@ -45,7 +45,7 @@ export function ContactForm() {
         errors={state.errors}
       />
       <div>
-      <button className='border border-gray-300 mt-6 py-1 px-2 font-mono rounded-sm cursor-pointer hover:bg-red-100'  type="submit" disabled={state.submitting}>
+      <button className='border dark:bg-yellow-200 border-gray-300 mt-6 py-1 px-2 font-mono rounded-sm cursor-pointer hover:bg-red-100'  type="submit" disabled={state.submitting}>
         Submit
       </button>
       </div>

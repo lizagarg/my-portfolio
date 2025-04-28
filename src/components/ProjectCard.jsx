@@ -16,7 +16,7 @@ export const ProjectCard = ({ description, title, picture, skill1, skill2 }) => 
   return (
     <motion.div
       onMouseMove={onMouseMove}
-      className="dark:bg-gray-700 group relative bg-white w-100 ml-4 px-5 py-1 rounded-2xl h-50 mb-4 border border-gray-300 cursor-pointer overflow-hidden transition duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg"
+      className="dark:bg-[#282828] dark:border-0 group relative bg-white w-100 ml-4 px-5 py-1 rounded-2xl h-50 mb-4 border border-gray-300 cursor-pointer overflow-hidden transition duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg"
     >
       <Effect mouseX={mouseX} mouseY={mouseY} />
       <div className="relative z-10">
