@@ -2,9 +2,13 @@ import React, { useState, useEffect } from 'react';
 
 const Switcher12 = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
+ 
 
-
-  const toggleTheme = () => {
+    useEffect(()=>{
+        localStorage.setItem("isDarkMode",true);
+        document.documentElement.classList.add("dark");
+    },[])
+   const toggleTheme = () => {
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
     localStorage.setItem("isDarkMode", newMode.toString());
