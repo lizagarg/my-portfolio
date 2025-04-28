@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const Switcher12 = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
 
   const toggleTheme = () => {
