@@ -1,6 +1,7 @@
 import { Logo } from "./Logo"
-export const SidebarCards=({label,title,data})=>{
+export const SidebarCards=({label,title,data, sociallink})=>{
     return(
+        <a href={sociallink}>
         <div className="flex items-center">
             <div className=" border-1 border-gray-300 shadow-2xl shadow-gray-400 p-2 rounded-md">
                 <Logo label={label}></Logo>
@@ -10,5 +11,6 @@ export const SidebarCards=({label,title,data})=>{
                 <div>{data}</div>
             </div>
         </div>
+        </a>
     )
 }
