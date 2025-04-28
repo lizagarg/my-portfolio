@@ -14,9 +14,10 @@ export const ProjectCard = ({ description, title, picture, skill1, skill2 }) => 
   }
 
   return (
+    <div className="mb-4">
     <motion.div
       onMouseMove={onMouseMove}
-      className="dark:bg-[#282828] dark:border-0 group relative dark:text-[#c1c0c0] bg-white w-100 ml-4 px-5 py-1 rounded-2xl h-50 mb-4 border border-gray-300 cursor-pointer overflow-hidden transition duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg"
+      className="dark:bg-[#282828] dark:border-0 group relative dark:text-[#c1c0c0] bg-white w-100 ml-4 px-5 py-1 h-50 rounded-2xl border border-gray-300 cursor-pointer overflow-hidden transition duration-300 ease-in-out hover:scale-[1.02] hover:shadow-lg"
     >
       <Effect mouseX={mouseX} mouseY={mouseY} />
       <div className="relative z-10">
@@ -35,6 +36,7 @@ export const ProjectCard = ({ description, title, picture, skill1, skill2 }) => 
         </div>
       </div>
     </motion.div>
+    </div>
   );
 
   function Effect({ mouseX, mouseY }) {
