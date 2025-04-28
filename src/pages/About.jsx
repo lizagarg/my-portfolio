@@ -4,7 +4,7 @@ import { Main } from "../components/Main"
 import { ProjectCard } from "../components/ProjectCard"
 export const About=()=>{
     return(
-        <div className='bg-[#dee1ef]'>
+        <div className='bg-[#ffffff]'>
         <Navbar></Navbar>
         <div className="flex">
         <div className='py-6 '><Sidebar></Sidebar></div>
