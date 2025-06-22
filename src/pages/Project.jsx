@@ -4,7 +4,7 @@ import { Sidebar} from "../components/Sidebar"
 import { Main } from "../components/Main"
 export const Project=()=>{
     return(
-         <div className='bg-[#ffffff] dark:bg-[#1a1a1a]'>
+         <div className='bg-[#ffffff] dark:bg-[#1a1a1a] max-h-screen overflow-y-auto'>
                 <Navbar></Navbar>
                 <div className="flex">
                 <div className='py-6 '><Sidebar></Sidebar></div>

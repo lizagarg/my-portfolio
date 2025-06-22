@@ -1,21 +1,18 @@
-import { About } from './pages/About'
-import { BrowserRouter } from 'react-router-dom'
-import { Route } from 'react-router-dom'
-import { Project } from './pages/Project'
-import { Routes } from 'react-router-dom'
-import { Contact } from './pages/Contact'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { About } from './pages/About';
+import { Project } from './pages/Project';
+import { Contact } from './pages/Contact';
 
 function App() {
-
   return (
     <BrowserRouter>
-    <Routes>
-      <Route element={<About/>} path='/'></Route>
-      <Route element={<Project/>} path='/projects'></Route>
-      <Route element={<Contact/>} path='/contact'></Route>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/projects" element={<Project />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
