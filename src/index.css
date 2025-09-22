@@ -2,3 +2,8 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+@layer base {
+  html, body, #root {
+    @apply min-h-screen bg-[#ffffff] dark:bg-[#1a1a1a];
+  }
+}

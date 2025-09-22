@@ -1,6 +1,6 @@
 export const Main=()=> {
     return(
-        <div className="py-4 px-5 border border-red-100 dark:bg-[#282828] dark:border-none dark:shadow-none dark:text-[#c1c0c0] rounded-md shadow-sm shadow-red-100">
+        <div className="py-4 px-5 border border-red-100  dark:bg-[#282828] dark:border-none dark:shadow-none dark:text-[#c1c0c0] rounded-md shadow-sm shadow-red-100">
             <div className="py-2 sm:py-4 font-bold text-2xl sm:text-3xl text-gray-800 dark:text-white">About Me</div>
             <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-4">
                 <div className="md:flex-1 text-sm sm:text-base">My days start with coffee and end with code. In between, there's a little chaos and a constant drive to make something better than yesterday.</div>
