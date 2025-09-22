@@ -1,13 +1,13 @@
 import { SidebarCards } from "./SidebarCards";
 import { useState } from "react";
+import ResumePDF from "../assets/Liza_Garg_Resume.pdf"; // import the PDF
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-const handleOpen = () => {
-  const pdfURL = "/Liza_Garg_Resume.pdf"; // remove 'public/'
-  window.open(pdfURL, "_blank");
-};
+  const handleOpen = () => {
+    window.open(ResumePDF, "_blank"); // open the imported PDF
+  };
 
   return (
     <>
@@ -18,47 +18,48 @@ const handleOpen = () => {
             <img
               className="bg-blue-50 dark:bg-[#1a1a1a] rounded-2xl"
               src="/avatar_1738345162-removebg-preview.png"
-              alt=""
+              alt="Liza Garg"
             />
           </div>
           <div className="dark:text-white">Liza Garg</div>
         </div>
+
         <div className="py-4 flex flex-col space-y-4">
           <SidebarCards
             label="Contact"
             title="Email"
             data="lizagarg5@gmail.com"
-            sociallink="mailto:${lizagarg5@gmail.com}"
-          ></SidebarCards>
+            sociallink="mailto:lizagarg5@gmail.com"
+          />
           <SidebarCards
             label="Leetcode"
             title="Leetcode"
             data="lizagarg"
             sociallink="https://leetcode.com/lizagarg"
-          ></SidebarCards>
+          />
           <SidebarCards
             label="Github"
             title="Github"
             data="lizagarg"
             sociallink="https://github.com/lizagarg"
-          ></SidebarCards>
+          />
           <SidebarCards
             label="LinkedIn"
             title="LinkedIn"
             data="Liza Garg"
             sociallink="https://www.linkedin.com/in/liza-garg-2467211a7/"
-          ></SidebarCards>
+          />
           <SidebarCards
-            onClick={handleOpen}
+            onClick={handleOpen} // opens PDF reliably
             label="Resume"
             title="Resume"
             data="Liza Garg"
-          ></SidebarCards>
+          />
           <SidebarCards
             label="Location"
             title="Location"
             data="India"
-          ></SidebarCards>
+          />
         </div>
       </div>
 
