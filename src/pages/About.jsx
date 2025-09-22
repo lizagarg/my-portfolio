@@ -5,19 +5,17 @@ import { ProjectCard } from "../components/ProjectCard"
 
 export const About = () => {
   return (
-    <div className="bg-[#ffffff] dark:bg-[#1a1a1a] max-h-screen overflow-y-auto"> 
-      <div>
-        <Navbar />
-      </div>
-      <div className="flex">
-        <div className="py-6">
+    <div className="bg-[#ffffff] dark:bg-[#1a1a1a] min-h-screen"> 
+      <Navbar />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-4">
+        <div className="py-6 hidden md:block">
           <Sidebar />
         </div>
         <div className="flex flex-col flex-1">
-          <div className="bg-white dark:bg-[#1a1a1a] my-6 mx-2 rounded-2xl px-4 py-4 dark:border-0 shadow-md">
+          <div className="bg-white dark:bg-[#1a1a1a] my-6 rounded-2xl px-4 sm:px-6 py-4 dark:border-0 shadow-md">
             <Main />
           </div>
-          <div className="grid lg:grid-cols-2 gap-6 px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-8">
             <ProjectCard
               picture="paytm"
               title="Paytm"

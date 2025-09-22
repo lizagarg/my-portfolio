@@ -1,7 +1,7 @@
 import { Logo } from "./Logo"
 export const SidebarCards=({label,title,data, sociallink, onClick})=>{
     return(
-        <a href={sociallink}>
+        <a href={sociallink} className="block">
         <div onClick={onClick} className="flex items-center cursor-pointer">
             <div className=" border-1 border-gray-300 dark:border-0 dark:text-yellow-200 shadow-2xl shadow-gray-400 p-2 rounded-md">
                 <Logo label={label}></Logo>
