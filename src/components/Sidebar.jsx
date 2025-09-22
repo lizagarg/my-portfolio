@@ -5,7 +5,7 @@ export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
-    const pdfURL = "/Liza_Garg_Resume.pdf";
+    const pdfURL = "public/Liza_Garg_Resume.pdf";
     window.open(pdfURL, "_blank");
   };
 
