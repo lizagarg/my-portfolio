@@ -4,10 +4,10 @@ import { useState } from "react";
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleOpen = () => {
-    const pdfURL = "public/Liza_Garg_Resume.pdf";
-    window.open(pdfURL, "_blank");
-  };
+const handleOpen = () => {
+  const pdfURL = "/Liza_Garg_Resume.pdf"; // remove 'public/'
+  window.open(pdfURL, "_blank");
+};
 
   return (
     <>
