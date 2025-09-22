@@ -16,33 +16,32 @@ export const About = () => {
             <Main />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-8">
-            <ProjectCard
-              picture="paytm"
-              title="Paytm"
-              description="Clone of Paytm application where users can track balances and send and receive money."
-              skill1="react.js"
-              skill2="express.js"
+          <ProjectCard
+              picture="echoverse"
+              title="EchoVerse"
+              description="A secure blogging platform that allows users to create, edit, and manage blogs effortlessly, with robust authentication and authorization."
+              skills={["React.js", "Hono.js", "Prisma", "PostgreSQL"]}
             />
+
             <ProjectCard
-              picture="blog"
-              title="MegaBlogs"
-              description="An app where users can create, edit, delete and update their blogs."
-              skill1="next.js"
-              skill2="hono.js"
+              picture="bhavanuvad"
+              title="BhavAnuvad"
+              description="A Hindi sentiment analysis app which is fine-tuned on IndicBERT, achieving 90% accuracy across 7 sentiment categories."
+              skills={["NLP", "Python", "Transformers", "IndicBERT"]}
             />
+
             <ProjectCard
-              picture="disease"
-              title="Alzeimer Disease Detection"
-              description="Analyzed records from a Kaggle dataset to predict Alzheimer’s disease."
-              skill1="machine learning"
-              skill2="python"
+              picture="sahayika"
+              title="Sahayika"
+              description="A web app to auto-fill financial forms for underserved women, cutting manual effort by 80% using BERT, spaCy, and Vosk."
+              skills={["React.js", "BERT", "Tesseract.js", "Vosk", "spaCy"]}
             />
+
             <ProjectCard
-              picture="news"
-              title="News App"
-              description="Fetches the latest headlines for you."
-              skill1="react.js"
-              skill2="express.js"
+              picture="newsbot"
+              title="NewsBot"
+              description="An AI-powered tool to automate news research with question-answering, semantic search, and document chunking."
+              skills={["LangChain", "Streamlit", "Gemini API", "FAISS"]}
             />
           </div>
         </div>
